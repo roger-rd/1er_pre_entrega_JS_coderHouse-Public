@@ -32,10 +32,10 @@ A continuación, se proporcionan instrucciones básicas para ejecutar el proyect
 
 
 Contribuciones
-¡Contribuciones son bienvenidas! Si deseas mejorar este proyecto, sigue estos pasos:
+- ¡Contribuciones son bienvenidas! Si deseas mejorar este proyecto, sigue estos pasos:
 
 Haz un fork del repositorio.
-Crea una nueva rama para tu función: git checkout -b feature/nueva-funcion.
-Realiza tus cambios y haz commit: git commit -m 'Agrega nueva función'.
-Sube tus cambios: git push origin feature/nueva-funcion.
-Abre un pull request.
+- Crea una nueva rama para tu función: git checkout -b feature/nueva-funcion.
+- Realiza tus cambios y haz commit: git commit -m 'Agrega nueva función'.
+- Sube tus cambios: git push origin feature/nueva-funcion.
+- Abre un pull request.
