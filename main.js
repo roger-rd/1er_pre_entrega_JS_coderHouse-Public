@@ -78,11 +78,19 @@ const agregarPlato = () => {
 // Bucle para permitir al usuario agregar varios platos
 do {
     agregarPlato();
+
     // Preguntar al usuario si desea agregar otro plato
-    const respuesta = prompt("¿Desea agregar otro plato? (Sí/No)");
-        if (!respuesta || respuesta.toLowerCase() === "no"){
+    let respuesta;
+    do {
+        respuesta = prompt("¿Desea agregar otro plato? (Sí/No)").trim().toLowerCase();
+        if (respuesta !== "si" && respuesta !== "no") {
+            alert("Por favor, ingrese 'SI' o 'NO'.");
+        }
+    } while (respuesta !== "si" && respuesta !== "no");
+
+    if (respuesta === "no") {
         break;
-    };
+    }
 } while (true);
 
   // Solicitar al usuario el porcentaje de propina
