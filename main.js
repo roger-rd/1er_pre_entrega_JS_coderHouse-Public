@@ -70,20 +70,10 @@ do {
   const principal = obtenerOpcionPorID("principal");
   const bebida = obtenerOpcionPorID("bebida");
 
-  // Preguntar al usuario si desea agregar otro plato
-//   const respuesta = prompt("¿Desea agregar otro plato? (Sí/No)");
-//   if (!respuesta || respuesta.toLowerCase() !== "si") {
-//     break;
-//   }
-let respuesta;
-
-do {
-  respuesta = prompt("¿Desea agregar otro plato? (Sí/No)").trim().toLowerCase();
-
-  if (respuesta !== "si" && respuesta !== "no") {
-    alert("Por favor, ingrese 'si' para Sí o 'no' para No.");
+  const respuesta = prompt("¿Desea agregar otro plato? (Sí/No)");
+  if (!respuesta || respuesta.toLowerCase() === "no") {
+    break;
   }
-} while (respuesta !== "si" && respuesta !== "no");
 
   // Agregar detalles del pedido
   detallesPedido += `${entrada.nombre}: $${entrada.precio.toFixed(2)}\n`;
@@ -93,7 +83,7 @@ do {
   // Calcular subtotal
   subTotal += entrada.precio + principal.precio + bebida.precio;
 
-  
+  // Preguntar al usuario si desea agregar otro plato
   
 } while (true);
 
