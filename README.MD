@@ -1,6 +1,6 @@
 # 2da_preEntrega
 
-comienzo de proyecto de crear ordenes de un restaurante
+Comienzo de proyecto de crear ordenes de un restaurante
 
 ---
 
